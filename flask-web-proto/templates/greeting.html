@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}flask-web-app{% endblock %}
+
+{% block content %}
+<h1>
+  {{ greeting }} {% if user_name %}{{ user_name }}{% else %}World{% endif %} !!
+</h1>
+{% endblock %}

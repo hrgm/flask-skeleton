@@ -1,0 +1,13 @@
+venv/
+
+*.pyc
+__pycache__/
+
+/**/instance/*
+!/**/instance/.gitkeep
+
+/**/log/*
+!/**/log/.gitkeep
+
+/**/tests/*
+!/**/tests/.gitkeep
