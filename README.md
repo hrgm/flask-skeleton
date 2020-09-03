@@ -2,18 +2,16 @@
 
 Python 用 Web アプリケーションフレームワーク "Flask" の用途別ディレクトリ構成スケルトン
 
-## スケルトン
-
-### flask-web-prot
+## flask-web-prot
 
 Module 版 Flask アプリケーション
 
-#### 用途
+### 用途
 
 - Web アプリケーションのプロトタイプ
 - 小規模 Web アプリケーション
 
-#### 設定ファイル
+### 設定ファイル
 
 | ファイルパス                                   | 設定内容       |        |
 | :--------------------------------------------- | :------------- | :----- |
@@ -23,7 +21,7 @@ Module 版 Flask アプリケーション
 
 ※ instance ディレクトリ内は Git の追跡対象外なので、別途作成が必要
 
-#### 開発サーバ起動
+### 開発サーバ起動
 
 ```
 $ export FLASK_APP=application.py
@@ -31,21 +29,21 @@ $ export FLASK_ENV=development
 $ flask run
 ```
 
-#### デバッグ用 URL
+### デバッグ用 URL
 
 `http://localhost:5000/Hi?user_name=hrgm`
 
-### flask-web-app
+## flask-web-app
 
 Package 版 Flask アプリケーション
 
-#### 用途
+### 用途
 
 - 中規模 Web アプリケーション
 
 大規模な Web アプリケーションを構築する場合は、 Django などのフルスタック Web アプリケーションフレームワークを使用した方がいいかも…
 
-#### 設定ファイル
+### 設定ファイル
 
 | ファイルパス                                 | 設定内容       |        |
 | :------------------------------------------- | :------------- | :----- |
@@ -55,7 +53,7 @@ Package 版 Flask アプリケーション
 
 ※ instance ディレクトリ内は Git の追跡対象外なので、別途作成が必要
 
-#### 開発サーバ起動
+### 開発サーバ起動
 
 ```
 $ export FLASK_APP=app
@@ -63,19 +61,19 @@ $ export FLASK_ENV=development
 $ flask run
 ```
 
-#### デバッグ用 URL
+### デバッグ用 URL
 
 `http://localhost:5000/greeting/Hi?user_name=hrgm`
 
-### flask-rest-api
+## flask-rest-api
 
 RESTful API (REST API) Flask アプリケーション
 
-#### 用途
+### 用途
 
 - RESTful API (REST API)
 
-#### 設定ファイル
+### 設定ファイル
 
 | ファイルパス                                  | 設定内容       |        |
 | :-------------------------------------------- | :------------- | :----- |
@@ -85,7 +83,7 @@ RESTful API (REST API) Flask アプリケーション
 
 ※ instance ディレクトリ内は Git の追跡対象外なので、別途作成が必要
 
-#### 開発サーバ起動
+### 開発サーバ起動
 
 ```
 $ export FLASK_APP=api
@@ -93,6 +91,6 @@ $ export FLASK_ENV=development
 $ flask run
 ```
 
-#### デバッグ用 URL
+### デバッグ用 URL
 
 `http://localhost:5000/greeting/Hi?user_name=hrgm`
