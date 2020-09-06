@@ -9,7 +9,7 @@ def create_app(test_config=None):
     app.config.from_object("settings")
 
     # 非公開設定ファイル読み込み
-    if os.environ["FLASK_ENV"] == "development":
+    if app.config["ENV"] == "development":
         app.config.from_pyfile(os.path.join("config", "development.py"), silent=True)
     else:
         app.config.from_pyfile(os.path.join("config", "production.py"), silent=True)

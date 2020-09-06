@@ -2,7 +2,7 @@
 
 Python 用 Web アプリケーションフレームワーク "Flask" の用途別ディレクトリ構成スケルトン
 
-## flask-web-prot
+## flask-web-proto
 
 Module 版 Flask アプリケーション
 
