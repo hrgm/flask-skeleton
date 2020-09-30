@@ -1,5 +1,12 @@
 import os
+from json import load
 from flask import Flask, request, render_template
+from logging.config import dictConfig
+
+
+# Logging 設定ファイル読み込み
+with open("logging.json", "r", encoding="utf-8") as f:
+    dictConfig(load(f))
 
 app = Flask(__name__, instance_relative_config=True)
 
@@ -20,5 +27,7 @@ def greeting_user(greeting="Hello"):
         user_name = request.form["user_name"]
     else:
         user_name = request.args.get("user_name", "")
+
+    app.logger.info("user_name is %s", user_name)
 
     return render_template("greeting.html", greeting=greeting, user_name=user_name)

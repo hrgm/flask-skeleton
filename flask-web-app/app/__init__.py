@@ -1,8 +1,14 @@
 import os
+from json import load
 from flask import Flask
+from logging.config import dictConfig
 
 
 def create_app(test_config=None):
+    # Logging 設定ファイル読み込み
+    with open("logging.json", "r", encoding="utf-8") as f:
+        dictConfig(load(f))
+
     app = Flask(__name__, instance_relative_config=True)
 
     # 標準設定ファイル読み込み

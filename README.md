@@ -18,6 +18,7 @@ Module 版 Flask アプリケーション
 | flask-web-proto/settings.py                    | 標準設定       | 公開   |
 | flask-web-proto/instance/config/development.py | 開発環境用設定 | 非公開 |
 | flask-web-proto/instance/config/production.py  | 本番環境用設定 | 非公開 |
+| flask-web-proto/logging.json                   | Logging 設定   | 公開   |
 
 ※ instance ディレクトリ内は Git の追跡対象外なので、別途作成が必要
 
@@ -50,6 +51,7 @@ Package 版 Flask アプリケーション
 | flask-web-app/settings.py                    | 標準設定       | 公開   |
 | flask-web-app/instance/config/development.py | 開発環境用設定 | 非公開 |
 | flask-web-app/instance/config/production.py  | 本番環境用設定 | 非公開 |
+| flask-web-app/logging.json                   | Logging 設定   | 公開   |
 
 ※ instance ディレクトリ内は Git の追跡対象外なので、別途作成が必要
 
@@ -80,6 +82,7 @@ RESTful API (REST API) Flask アプリケーション
 | flask-rest-api/settings.py                    | 標準設定       | 公開   |
 | flask-rest-api/instance/config/development.py | 開発環境用設定 | 非公開 |
 | flask-rest-api/instance/config/production.py  | 本番環境用設定 | 非公開 |
+| flask-rest-api/logging.json                   | Logging 設定   | 公開   |
 
 ※ instance ディレクトリ内は Git の追跡対象外なので、別途作成が必要
 
